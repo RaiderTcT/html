@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <title>Base</title>
+    <!--定义内部css标签-->
+    <link rel="stylesheet" href="mystyle.css">
+    <style type="text/css">
+        h1 {color:red}
+        h2 {color: blue}
+        h3 {color: orange}
+        h4 {color: brown}
+        h5 {color: black}
+        h6 {color: pink}
+    </style>
+</head>
+<body background="back.jpg"><!--设定背景颜色bgcolor="white"-->
+    <h1 name='h1' align="center">this is head 1</h1><!--排列方式-->
+    <h2 align='right'>this is head 2</h2>
+    <h3 align="left">this is head 3</h3>
+    <h4>this is head 4</h4>
+    <h5>this is head 5</h5>
+    <h6>this is head 6</h6>
+    <!--内联样式-->
+    <p style="color: red; margin-left: 40px">标题到此结束，6级，This is a paragraph</p>
+    <hr /> <!--水平分割线-->
+    <p>
+        <br/><!--表示空行-->
+        <a href="http://127.0.0.1" target="_blank"> 本地 </a><!--一个链接-->
+        <br>
+        <a href="/" target="_top"> 跳出框架 </a>
+        <br/>
+        <a href="new.html" style="text-decoration: none;">本地，没有下划线</a>
+        <br>
+        <a name="tips1">提示1</a>
+
+    </p>
+    <hr />
+    <p> <!--插入图片-->
+        <a href="https://www.baidu.com">
+            <img src="desktop.jpg" alt="桌面" width="800" height="600">
+        </a>  
+    </p>
+    <hr />
+    <div><bdo dir="rtl">从右向左</bdo><br />
+        <bdo dir="ltr">从左向右</bdo><br />
+        <q><i>一问<del>删除</del>侠刀蜀道<ins>插入</ins>行</i></q>
+        <p>
+            <a href="素风.jpeg" target='_blank'>图片链接</a>
+            <br>
+            <a href="#tips1">前往提示</a>
+            <br>
+            <a href="new.html#new_anchor">前往其他网页</a>
+        </p>
+        <p>
+            邮件链接:
+            <a href="mailto:2276777056@qq.com?subject=Hello%202276777056">
+                <img src="eg_cute.gif" width="50" height="50" />
+            </a> 
+        </p>
+        <h2>未设置对齐方式的图像：</h2>
+
+        <p>图像 <img src ="eg_cute.gif"> 在文本中</p>
+
+        <h2>已设置对齐方式的图像：</h2>
+
+        <p>图像 <img src="eg_cute.gif" align="bottom"> 在文本中</p>
+
+        <p>图像 <img src ="eg_cute.gif" align="middle"> 在文本中</p>
+
+        <p>图像 <img src ="eg_cute.gif" align="top"> 在文本中</p>
+
+        <p>请注意，bottom 对齐方式是默认的对齐方式。</p>
+        <p>align 为left，图像移动到左侧<img src ="eg_cute.gif" align="left"> </p>
+        <p>align 为right，图像移动到右侧<img src ="eg_cute.gif" align="right"> </p>
+    </div>
+    <div>
+        <p><kbd>通过键盘输入：</kbd></p>
+        <p><samp>计算机输出示例：Windows 10  </samp></p>
+        <p>数学变量：<var>E = m c<sup>2</sup>;<br>a<sub>i</sub>=0</var></p>
+        <p><pre><code>代码示例：
+            @main.route('/followed')
+            @login_required
+            def show_followed():
+                resp = make_response(redirect(url_for('.index')))
+                resp.set_cookie('show_followed', '1', max_age=30*24*60*60)
+                return resp
+            </code></pre></p>
+    </div>
+    <div> <blockquote>
+            半神半圣亦半仙，全儒全道是全贤。<br />
+            脑中真书藏万卷，掌握文武半边天。<br />
+        </blockquote>
+        <dfn>项目</dfn>
+    </div>
+    <!--[if CHROME]>
+        <b>天下</b>
+    <![endif]-->   
+    <!--页脚-->
+    <footer>
+        <p>Posted by: Hege Refsnes</p>
+        <p><time pubdate datetime="2012-03-01"></time></p>
+    </footer>
+    
+</body>
+</html>

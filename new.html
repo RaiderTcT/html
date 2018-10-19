@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <style type="text/css">
+        span.white {color:white;}
+        span.blue {color:blue }
+        .cities {
+            background-color: white;
+            color:green;
+            margin: 20px;
+            padding: 20px;
+            height: 300px;
+        }
+        #header{
+          background-color: black;
+          color: white;
+          padding: 5px;
+          text-align: center;
+        } 
+        footer {
+          background-color: black;
+          color: white;
+          padding: 5px;
+          text-align: right;
+        }
+        #nav{
+          color: orange;
+          text-align: center;
+          padding: 5px;
+          background-color: white;
+          float: left;
+          height: 300px;
+          width:100px;
+        }
+        table.word {
+          width:100%;
+          border:1px;
+          background-color: white;
+        }
+        table.word th td{
+          padding: 10px;
+        }
+        table.word td {
+          width:40px;
+        }
+    </style>
+    <title>new</title>
+</head>
+<body>
+    <div id='header'><h1>布局</h1></div>
+    <div id='nav'>
+      一<br>
+      二<br>
+      三<br>
+    </div>
+    <div class="cities">
+        <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    </div>
+    <div>
+            <p>
+       <h1>新的网页</h1>
+       <img src="C:\Users\JianliangWu\Pictures\timg.jpg" ismap alt="timg"/>
+       <h2><a id='new_anchor'>新的锚</a></h2>
+    </p>
+    <p>
+       <table border="2" cellspacing="10" bgcolor="red" frame="above">
+        <caption>表格</caption>
+         <thead>    
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+         <tfoot>
+             <tr>
+              <td>Sum</td>
+              <td>$180</td>
+            </tr>
+         </tfoot>   
+         <tbody>
+            <tr>
+               <th colspan="2">列1</th>
+            </tr>
+           <tr>
+                <td>   
+                    <p><span class='white'>这是一个段落。</span></p>
+                    <p><span class='blue'>这是另一个段落。</span></p>
+                    <dl>
+                        <dt>标题1</dt>
+                        <dd>数据1</dd>
+                        <dt>标题2</dt>
+                        <dd>数据2</dd>
+                    </dl>
+                </td>
+                <td>内有一个表格
+                   <table class='word'>
+                   <tr>
+                     <td>A</td>
+                     <td>B</td>
+                   </tr>
+                   <tr>
+                     <td>C</td>
+                     <td>D</td>
+                   </tr>
+                   </table>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>这个单元包含一个列表：
+                   <ul type="disc">
+                    <li>苹果</li>
+                    <li>
+                    <ol type="I">
+                       <li>coffeee</li>
+                       <li>beer</li>
+                       <li>tea</li>
+                    </ol>
+                    </li>
+                    <li>香蕉</li>
+                    <li>菠萝</li>
+                   </ul>
+                </td>
+            </tr>
+         </tbody>
+           
+       </table> 
+    </p>
+    <p>
+       <table border="0" cellpadding='10' frame="box">
+           <tr>
+               <th align="left">name</th>
+               <td align="right">Tom</td>
+           </tr>
+           <tr>
+                <th rowspan="2" align="left">Tel</th>
+                <td style="color: blue; background-color: black" align="right">123444</td>
+            </tr>
+            <tr>
+                <td align="right">rwrrr</td>
+            </tr>
+       </table> 
+    </p>
+    </div>
+    <footer><h1>页脚</h1></footer>
+</body>    
+</html>
