@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang='zh'>
+<head>
+  <mete charset='utf-8'>
+  <!-- Required meta tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>表单</title>
+</head>
+<body>
+  <!--必须要在每个字段设置一个name属性-->
+  <form action="" name='name' method="post">
+    <div class="form-group">
+      First name: <br>
+      <input type="text" name="First name" value="John" readonly>
+      <br>
+      Last name: <br>
+      <input type="text" name="Last name" value="Cena" readonly>
+      <br>
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" name="email"  aria-describedby="emailHelp" placeholder="Emaile">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <br>
+      密码： <br>
+      <input type="password" name='pwd'>
+      <br>
+      颜色： <br>
+      <input type="color" name='color'>
+      <br>
+      日期： <br>
+      <input type="datetime" name='date' min="1979-01-01" max='2099-01-01'>
+      <br>
+    </div>
+    <br>
+    图片： <br>
+    <input type="image" src='eg_cute.gif' alt="submit" height="48" width="48">
+  </form>
+  <hr>
+  <!--如果表单提交是被动的（比如搜索引擎查询）并且没有敏感信息当您使用 GET 时，表单数据在页面地址栏中是可见的-->
+  单选按钮
+  <form action="" name='radio' method="post">
+    <input type="radio" name='sex' value="male" checked> Male
+    <br>
+    <input type="radio" name="sex" value="female">Female
+  </form>
+  <hr>
+  下拉列表
+  <form action="" name="下拉列表" method="post">
+    <select name="cars" id="cars">
+      <option value="volvo" selected>Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+    <input type="submit" value="submit">
+  </form>
+  <hr>
+  多行输入文本
+  <form action="" name="textarea" method="post">
+    <textarea name="message" id="" cols="30" rows="10" maxlength="50">
+      世间观，景阑珊，黄金不富英雄汉。
+    </textarea>
+    <br>
+    <input type="submit" value="submit">
+  </form>
+  <hr>
+  datalist html5 用户会在他们输入数据时看到预定义选项的下拉列表
+  <form action="" name="datalist" method="post">
+    <input list="browsers">
+    <datalist id="browsers">
+       <option value="Internet Explorer">
+       <option value="Firefox">
+       <option value="Chrome">
+       <option value="Opera">
+       <option value="Safari">
+    </datalist> 
+  </form>
+  <hr>
+  复选框
+  <form action="">
+    <input type="checkbox" name="vehicle" value="Bike"> Bike
+    <input type="checkbox" name='vehicle' value="Car"> Car
+    <input type="button" onclick="alert('hello word')" value="点我">
+  </form>
+  <hr>
+  <p>
+  根据浏览器支持：<br>
+  数值约束会应用到输入字段中。
+  </p>
+  <form action="">
+    数量（1 到 5 之间）：
+    <input type="number" name="quantity" min="1" max="5">
+    <input type="submit">
+  </form>
+  <p><b>注释：</b>IE9 及早期版本不支持 type="number"。</p>
+  <hr>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
