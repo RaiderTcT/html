@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2018-11-20 20:28:59
+ * @version $Id$
+ */
+
+p {
+    text-align: left;
+    color: #ffaa11;
+    font-family: arial;
+    font-size: 20px;
+    /*背景*/
+    background-color: gray;
+    padding: 20px;
+}
+body {
+    background-image: url(back.jpg);
+    background-repeat: repeat-y;
+}
