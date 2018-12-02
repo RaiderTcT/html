@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- 新 Bootstrap4 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+  
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+
+<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script> 
+<title>lay-out</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+<hr>
+<!-- 全屏宽度     -->
+<div class="container-fluid">
+  <!-- col -sm, md, lg, xl  最多12列--> 
+  <!-- 540px 720px 960px 1140px  -->
+  <!-- 等宽列 -->
+  <div class="row">
+    <div class='col' style='background-color: black'>.col</div>
+    <div class='col' style='background-color: orange'>.col</div>
+    <div class='col' style='background-color: red'>.col</div>
+    <div class='col' style='background-color: lavender'>.col</div>   
+  </div>
+  <!-- 非等宽列 -->
+  <div class="row">
+    <div class='col-sm-1' style='background-color: black'>.col</div>
+    <div class='col-sm-2' style='background-color: orange'>.col</div>
+    <div class='col-sm-5' style='background-color: red'>.col</div>
+    <div class='col-sm-3' style='background-color: lavender'>.col</div>   
+  </div>
+  <!-- 平板、桌面、大桌面显示器、超大桌面显示器 -->
+  <!-- 宽度比例为分别为：25%/75%、50%/50%、33.33%/66.67%、16.67/83.33%, 在移动手机等小型设备上会堆叠显示 -->
+  <div class='row'>
+    <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 bg-success">
+        col1
+      </div>
+      <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 bg-warning">
+        col2
+      </div>    
+  </div>
+</div> 
+<hr>
+<div class='container'>
+  <!-- 偏移列 左外边距（margin）增加 * 列-->
+  <div class="row">
+    <div class="col-md-4 bg-dark">.col-md-4</div>
+    <div class="col-md-4 offset-md-4 bg-success">.col-md-4 .offset-md-4</div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 offset-md-3 bg-danger">.col-md-3 .offset-md-3</div>
+    <div class="col-md-3 offset-md-3 bg-info">.col-md-3 .offset-md-3</div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 offset-md-3 bg-secondary">.col-md-6 .offset-md-3</div>
+  </div>
+</div>
+<hr>
+<!-- 对齐 align-->
+<div class="container ">
+  <!-- 垂直对齐 -->
+  <div class="row align-items-start">
+    <div class="col bg-success">
+      One of three columns
+    </div>
+    <div class="col bg-dark">
+      One of three columns
+    </div>
+    <div class="col bg-info">
+      One of three columns
+    </div>
+  </div>
+  <div class="row align-items-center">
+    <div class="col bg-success">
+      One of three columns
+    </div>
+    <div class="col bg-dark">
+      One of three columns
+    </div>
+    <div class="col bg-info">
+      One of three columns
+    </div>
+  </div>
+  <div class="row align-items-end">
+    <div class="col bg-success">
+      One of three columns
+    </div>
+    <div class="col bg-dark">
+      One of three columns
+    </div>
+    <div class="col bg-info">
+      One of three columns
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col align-self-start bg-success">
+      起始align-self-start
+    </div>
+    <div class="col align-self-center bg-warning">
+      中align-self-center
+    </div>
+    <div class="col align-self-end bg-danger">
+      结尾col align-self-end
+    </div>
+  </div>
+</div>
+<hr>
+<!-- 水平方向对齐-->
+<div class="container">
+  <div class="row justify-content-start">
+    <div class="col-4 bg-danger">
+      One of two columns justify-content-start
+    </div>
+    <div class="col-4 bg-primary">
+      One of two columns justify-content-start
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-4 bg-danger">
+      One of two columns justify-content-center
+    </div>
+    <div class="col-4 bg-primary">
+      One of two columns justify-content-center
+    </div>
+  </div>
+
+  <div class="row justify-content-end">
+    <div class="col-4 bg-danger">
+      One of two columns justify-content-end
+    </div>
+    <div class="col-4 bg-primary">
+      One of two columns justify-content-end
+    </div>
+  </div>
+
+  <div class="row justify-content-around">
+    <div class="col-4 bg-danger">
+      One of two columns justify-content-around
+    </div>
+    <div class="col-4 bg-primary">
+      One of two columns justify-content-around
+    </div>
+  </div>
+
+  <div class="row justify-content-between">
+    <div class="col-4 bg-danger">
+      One of two columns justify-content-between
+    </div>
+    <div class="col-4 bg-primary">
+      One of two columns justify-content-between
+    </div>
+  </div>
+
+</div>
+<hr>
+  <!-- 强制换行 -->
+<div class="row">
+  <div class="col-6 col-sm-3 bg-danger">.col-6 .col-sm-3</div>
+  <div class="col-6 col-sm-3 bg-primary">.col-6 .col-sm-3</div>
+
+  <!-- Force next columns to break to new line -->
+  <div class="w-100"></div>
+
+  <div class="col-6 col-sm-3 bg-info">.col-6 .col-sm-3</div>
+  <div class="col-6 col-sm-3 bg-dark">.col-6 .col-sm-3</div>
+</div>
+
+<hr>
+<!-- 直接指定排列顺序 -->
+<div class="container">
+  <div class="row">
+    <div class="col order-last bg-light">
+      First, but last
+    </div>
+    <div class="col bg-dark">
+      Second, but unordered
+    </div>
+    <div class="col order-first bg-primary">
+      Third, but first
+    </div>
+  </div>
+</div>
+
+<!-- 设定列的边距 -->
+<div class="row">
+  <div class="col-md-4 bg-primary">.col-md-4</div>
+  <div class="col-md-4 ml-auto bg-danger">.col-md-4 .ml-auto</div>
+</div>
+<div class="row">
+  <div class="col-md-3 ml-md-auto bg-warning">.col-md-3 .ml-md-auto</div>
+  <div class="col-md-3 ml-md-auto bg-dark">.col-md-3 .ml-md-auto</div>
+</div>
+<div class="row">
+  <div class="col-auto mr-auto bg-info">.col-auto .mr-auto</div>
+  <div class="col-auto bg-secondary">.col-auto</div>
+</div>
+
+</body>
+</html>
+
