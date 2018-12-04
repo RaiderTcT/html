@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- 新 Bootstrap4 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+  
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+
+<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script> 
+<script type="text/javascript">
+alert('First javascript');
+</script>
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+    
+<p id="demo1">javascript 测试</p>
+
+<button class="btn btn-outline-primary" onclick="alert('fdffdf')">alert</button>
+
+<h1 id='demo2'>My 2 Web Page</h1>
+
+<h1 id='demo3'>My 3 Web Page</h1>
+<h1 id='demo4'>My 4 Web Page</h1>
+<h1 id='demo5'>My 5 Web Page</h1>
+<h1 id='demo6'>date</h1>
+<button class="btn btn-outline-primary" onclick="myFunction('ceo','ggg')">点击这里</button>
+<button class="btn btn-outline-primary" onclick="func2()">点击</button>
+
+
+<form action="submitpage.htm" onsubmit="return validate_form(this)" method="post">
+Email: <input type="text" name="email" size="30">
+<input type="submit" value="Submit"> 
+</form>
+
+<script>
+function func2(){
+  var day = new Date().getDay();
+  switch (day)
+{
+case 0:
+  x="Today it's Sunday";
+  break;
+case 1:
+  x="Today it's Monday";
+  break;
+case 2:
+  x="Today it's Tuesday";
+  break;
+case 3:
+  x="Today it's Wednesday";
+  break;
+case 4:
+  x="Today it's Thursday";
+  break;
+case 5:
+  x="Today it's Friday";
+  break;
+case 6:
+  x="Today it's Saturday";
+  break;
+}
+document.getElementById('demo6').innerHTML = x;
+}  
+function func1(){
+var x=5;
+return x;
+}  
+function myFunction(var1, var2)
+{
+var text_1 = "First"
+var text_2 = 'secondary "text" '
+var cars = ['audi', 'BMW']
+var person = {firstname:'Bill', lastname:'Gates', id:434}
+document.getElementById("demo1").innerHTML=cars[0].length;
+document.getElementById('demo2').innerHTML=cars[1];
+document.getElementById('demo3').innerHTML=person.firstname;
+document.getElementById('demo4').innerHTML=func1();
+document.getElementById('demo5').innerHTML=var1+var2;
+//document.write('<p>我的第一段 JavaScript</p>')
+}
+function validate_email(field,alerttxt)
+{
+with (field)
+{
+apos=value.indexOf("@")
+dotpos=value.lastIndexOf(".")
+if (apos<1||dotpos-apos<2) 
+  {alert(alerttxt);return false}
+else {return true}
+}
+}
+
+function validate_form(thisform)
+{
+with (thisform)
+  {
+  if (validate_email(email,"Not a valid e-mail address!")==false)
+    {email.focus();return false}
+  }
+}
+</script>
+
+
+
+</body>
+
+</html>
